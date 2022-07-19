@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <>
       {/* <News /> */}
-      {/* <Statistical /> */}
+      <Statistical />
       {/* <PriceBoard /> */}
       {/* <Banners /> */}
       <HighestSocial />

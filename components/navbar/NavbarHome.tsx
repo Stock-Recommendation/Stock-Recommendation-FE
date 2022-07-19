@@ -139,9 +139,9 @@ export const NavbarHome: FC = () => {
   const listMenuInitial = [
     {
       name: "Home",
-      link: "#",
+      link: "/",
       newTab: false,
-      routeSelected: "/nft",
+      routeSelected: "/",
     },
     {
       name: "Dashboard",

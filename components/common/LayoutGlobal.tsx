@@ -88,10 +88,10 @@ export default function LayoutGlobal(props: any): ReactElement {
         <>
         <div className="m-5" style={{paddingTop: '50px'}}>{props.children}</div>
         <div className="row-global pb-5 m-0 h-100">
-        <div className="main-background main-background-position-banner" />
-          {/* <div className="main-background main-background-position-priceboard" />
+          <div className="main-background main-background-position-banner" />
+          <div className="main-background main-background-position-priceboard" />
           <div className="main-background main-background-position-highestsocial" />
-          <div className="main-background main-background-position-blog" /> */}
+          <div className="main-background main-background-position-blog" />
         </div>
         </>
       )}
