@@ -58,13 +58,9 @@ export default function BlogSlides({ data }: any): ReactElement {
                 }}
             >
                 {data.map((blog: any, i: number) => {
-                    // console.log(blog)
                     const onClick = (data: any) => {
                         const slug = data.attributes.slug;
                         router.push(`/dapp-news/${slug}`);
-                        // window.open(
-                        //   `${window.location.origin}/dapp-news/${slug}`
-                        // );
                     };
                     return (
                         <SwiperSlide key={i}>
