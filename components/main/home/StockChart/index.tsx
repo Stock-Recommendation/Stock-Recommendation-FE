@@ -61,7 +61,7 @@ export const StockChart = () => {
   // render() {
   return (
     <div className="mb-5">
-      <h1 className="mb-5" style = {{color: "#42ba6b"}}>Stock Chart</h1>
+      <h2 className="mb-5" style={{fontWeight: "bold"}}>Stock Chart</h2>
       <LineChart
         width={1300}
         height={500}
