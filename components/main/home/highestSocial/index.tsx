@@ -63,7 +63,7 @@ export const HighestSocial: FC = () => {
 
   return (
     <section className="main-homepage-highestsocial px-lg-3 px-0">
-      <SectionHeader>Projects With The Highest Social Signal</SectionHeader>
+      <SectionHeader>Dashboard</SectionHeader>
       <Tabs
         defaultActiveKey={"crypto"}
         onChange={onChangeTab}

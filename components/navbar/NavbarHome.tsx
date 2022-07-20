@@ -19,15 +19,10 @@ import {
 } from "@ant-design/icons";
 import { AutoComplete, Drawer, Input, Menu, message, Modal, Popover } from "antd";
 import { Router, useRouter } from "next/router";
-import { Search } from "react-feather";
 import Link from "next/link";
-import LoginPopup from "./LoginPopup";
-import getUserInfo from "@utils/getUserInfo";
 import request from "@services/apiSSO";
 import Cookies from "js-cookie";
-import axios from "axios";
 import difRequest from "@services/apiService";
-import { removeVietnameseTones } from "@utils/processTextInput";
 import qs from "qs";
 import requestSSO from "@services/apiSSO";
 export const NavbarHome: FC = () => {
@@ -178,25 +173,6 @@ export const NavbarHome: FC = () => {
         newTab: false,
         routeSelected: "/dapp-portal",
       },
-      // {
-      //   name: "About Us",
-      //   link: "/dapp-portal",
-      //   newTab: false,
-      //   routeSelected: "/dapp-portal",
-      // },
-      // {
-      //   name: "PriceBoard",
-      //   link: "#",
-      //   newTab: false,
-      //   routeSelected: "/price-board",
-      // },
-      // { name: "INO", link: "#", newTab: false, routeSelected: "/ino" },
-      // {
-      //   name: "Submit Dapp",
-      //   link: "/submit",
-      //   newTab: false,
-      //   routeSelected: "/submit",
-      // },
       newLog,
     ]);
   }, [login]);
@@ -225,11 +201,6 @@ export const NavbarHome: FC = () => {
                       color: '#28a8df'
                     }}>
                       Tweetstock
-                      {/* <img
-                        alt=""
-                        src="/img/logo.png"
-                        style={{ width: "86px", height: "63px" }}
-                      /> */}
                     </h1>
                   </Link>
                 </div>
@@ -348,7 +319,6 @@ export const NavbarHome: FC = () => {
           )}
         </BoxALignCenter_Justify_ItemsBetween>
       </section>
-      <LoginPopup isVisible={isPopupVisible} setVisible={setPopupVisible} />
     </>
   );
 };

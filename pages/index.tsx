@@ -10,13 +10,9 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {/* <News /> */}
       <Header/>
       <StockChart/>
-      {/* <PriceBoard /> */}
-      {/* <Banners /> */}
       <HighestSocial />
-      {/* <NFTExplore /> */}
       <Tweet />
       <SocialNetwork />
     </>
