@@ -4,26 +4,26 @@ import BlogSlides from '../slides/BlogSlides';
 import request from '@services/apiService';
 import * as qs from 'qs';
 
-export const Blog: FC = () => {
-    const [blogList, setBlogList] = useState([]);
+export const Tweet: FC = () => {
+    const [blogList, setBlogList] = useState(['1','2','3']);
     
-    useEffect(() => {
-        (async () => {
-            const query = qs.stringify({
-                populate: '*',
-                pagination: {
-                    page: 1,
-                    pageSize: 6,
-                },
-                sort: [`createdAt:desc`]
-            }, {
-                encodeValuesOnly: true,
-            });
-            await request.get(`/posts?${query}`).then((res) => {
-                setBlogList(res.data.data);
-            })
-        })();
-    }, []);
+    // useEffect(() => {
+    //     (async () => {
+    //         const query = qs.stringify({
+    //             populate: '*',
+    //             pagination: {
+    //                 page: 1,
+    //                 pageSize: 6,
+    //             },
+    //             sort: [`createdAt:desc`]
+    //         }, {
+    //             encodeValuesOnly: true,
+    //         });
+    //         await request.get(`/posts?${query}`).then((res) => {
+    //             setBlogList(res.data.data);
+    //         })
+    //     })();
+    // }, []);
 
     return (
         <section className="main-homepage-blog px-3">

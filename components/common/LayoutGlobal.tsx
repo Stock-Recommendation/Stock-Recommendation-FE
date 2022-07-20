@@ -86,7 +86,7 @@ export default function LayoutGlobal(props: any): ReactElement {
       <NavbarHome />
       {(
         <>
-        <div className="m-5" style={{paddingTop: '50px'}}>{props.children}</div>
+        <div style={{paddingTop: '50px', margin: '50px '}}>{props.children}</div>
         <div className="row-global pb-5 m-0 h-100">
           <div className="main-background main-background-position-banner" />
           <div className="main-background main-background-position-priceboard" />

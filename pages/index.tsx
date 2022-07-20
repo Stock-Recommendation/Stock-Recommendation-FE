@@ -2,24 +2,22 @@ import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 
 const Home: NextPage = () => {
-  const News = dynamic(() => import("@components/main/home").then((mod: any) => mod.News)) as any;
-  const Statistical = dynamic(() => import("@components/main/home").then((mod: any) => mod.Statistical)) as any;
-  const PriceBoard = dynamic(() => import("@components/main/home").then((mod: any) => mod.PriceBoard)) as any;
-  const Banners = dynamic(() => import("@components/main/home").then((mod: any) => mod.Banners)) as any;
+  const Header = dynamic(() => import("@components/main/home").then((mod: any) => mod.Header)) as any;
+  const StockChart = dynamic(() => import("@components/main/home").then((mod: any) => mod.StockChart)) as any;
   const HighestSocial = dynamic(() => import("@components/main/home").then((mod: any) => mod.HighestSocial)) as any;
-  const NFTExplore = dynamic(() => import("@components/main/home").then((mod: any) => mod.NFTExplore)) as any;
-  const Blog = dynamic(() => import("@components/main/home").then((mod: any) => mod.Blog)) as any;
+  const Tweet = dynamic(() => import("@components/main/home").then((mod: any) => mod.Tweet)) as any;
   const SocialNetwork = dynamic(() => import("@components/main/home").then((mod: any) => mod.SocialNetwork)) as any;
 
   return (
     <>
       {/* <News /> */}
-      <Statistical />
+      <Header/>
+      <StockChart/>
       {/* <PriceBoard /> */}
       {/* <Banners /> */}
       <HighestSocial />
       {/* <NFTExplore /> */}
-      <Blog />
+      <Tweet />
       <SocialNetwork />
     </>
   )

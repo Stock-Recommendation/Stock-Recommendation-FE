@@ -1,9 +1,10 @@
 export { HighestSocial } from './highestSocial';
-export { PriceBoard } from './priceBoard';
+export { StockChart } from './StockChart';
 export { Statistical } from './statistical';
 // export { NFTExplore } from './nft';
 // export { Banners } from './banners';
 // export { DappNews } from './dappnews';
+export {Header} from './Header'
 export { News } from './news';
-export { Blog } from './blog';
+export { Tweet } from './Tweet';
 export { SocialNetwork } from './socialNetwork';

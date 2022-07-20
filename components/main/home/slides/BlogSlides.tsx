@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Empty } from "antd";
 import { useRouter } from "next/router";
+import TweetEmbed from "react-tweet-embed";
 
 export default function BlogSlides({ data }: any): ReactElement {
     const navigationPrevRef = React.useRef(null);
@@ -67,29 +68,7 @@ export default function BlogSlides({ data }: any): ReactElement {
                     };
                     return (
                         <SwiperSlide key={i}>
-                            <div className="main-homepage-blog-card">
-                                <div className="main-homepage-blog-card-header">
-                                    <img
-                                        className="main-homepage-blog-card-header-img"
-                                        src={`${URL_API_IMG}${blog.attributes.thumbnail.data?.attributes.url}`}
-                                        alt=""
-                                    />
-                                </div>
-                                <div className="main-homepage-blog-card-body">
-                                    <CategoryUnbox>
-                                        {blog.attributes.category.data?.attributes.name}
-                                    </CategoryUnbox>
-                                    <a onClick={()=>onClick(blog)} className="main-homepage-blog-card-body-title">
-                                        {blog.attributes.title}
-                                    </a>
-                                    <p className="main-homepage-blog-card-body-description">
-                                        {blog.attributes.description || 'Description is here, but null'}
-                                    </p>
-                                    <p className="main-homepage-blog-card-body-createdat">
-                                       By {blog.attributes.Author}  | {moment(blog.attributes.createdAt).format('LL')}
-                                    </p>
-                                </div>
-                            </div>
+                            <TweetEmbed tweetId={'1545136512274255874'}/>
                         </SwiperSlide>
                     )
                 })}

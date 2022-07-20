@@ -4,17 +4,18 @@
     position: absolute;
     user-select: none;
     width: 100%;
-    height: 550px;
-    z-index: -1;
+    height: 500px;
+    z-index: -10;
     &-position-banner {
-      background: linear-gradient(
-        180deg,
-        rgba(0, 182, 176, 0) 0%,
-        rgba(0, 182, 176, 0.1) 100%
-      );
-      clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+      background: url(/img/backgroundImg.jpg);
+      // background: linear-gradient(
+      //   180deg,
+      //   rgba(0, 182, 176, 0) 0%,
+      //   rgba(0, 182, 176, 0.1) 100%
+      // );
+      // clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
       left: 0;
-      top: 100px;
+      top: 20px;
     }
     &-position-priceboard {
       height: 1500px !important;

@@ -149,12 +149,6 @@ export const NavbarHome: FC = () => {
       newTab: false,
       routeSelected: "/dapp-portal",
     },
-    // {
-    //   name: "About Us",
-    //   link: "/dapp-portal",
-    //   newTab: false,
-    //   routeSelected: "/dapp-portal",
-    // },
   ];
 
   const [listMenu, setListMenu] = useState(listMenuInitial);
@@ -174,9 +168,9 @@ export const NavbarHome: FC = () => {
     setListMenu([
       {
         name: "Home",
-        link: "#",
+        link: "/",
         newTab: false,
-        routeSelected: "/nft",
+        routeSelected: "/",
       },
       {
         name: "Dashboard",
@@ -226,13 +220,17 @@ export const NavbarHome: FC = () => {
               <BoxALignItemsCenter className="col-md-6">
                 <div className="img-logo">
                   <Link href="/">
-                    <a>
-                      <img
+                    <h1 style={{
+                      fontWeight: 'bold', 
+                      color: '#28a8df'
+                    }}>
+                      Tweetstock
+                      {/* <img
                         alt=""
                         src="/img/logo.png"
                         style={{ width: "86px", height: "63px" }}
-                      />
-                    </a>
+                      /> */}
+                    </h1>
                   </Link>
                 </div>
                 <Menu
@@ -266,118 +264,10 @@ export const NavbarHome: FC = () => {
               </BoxALignItemsCenter>
               <div className="col-md-3 navbar_home_pc">
                 <BoxALignCenter_Justify_ItemsEnd className="w-100">
-                  {/* <form onSubmit={onSearch} className="navbar_home-form">
-                    <BoxALignItemsCenter>
-                      <input
-                        type="text"
-                        className="searchTerm"
-                        placeholder="Searching..."
-                        onChange={handleChangeSearch}
-                        onClick={() => setIsVisible(true)}
-                      />
-                      <button
-                        type="button"
-                        className="searchButton"
-                        onClick={onSearch}
-                      >
-                        <span>
-                          <Search width={18} height={18} />
-                        </span>
-                      </button>
-                    </BoxALignItemsCenter>
-                    <Modal
-                      style={{ top: "5rem" }}
-                      zIndex={100}
-                      width={1000}
-                      visible={isVisible}
-                      onCancel={onCancel}
-                    >
-                      <form onSubmit={onSearch}>
-                        <input
-                          type="text"
-                          style={{ border: "none" }}
-                          className="search-input"
-                          placeholder="Searching..."
-                          onChange={handleChangeSearch}
-                          value={curValue}
-                        />
-                        <hr />
-                        <p>
-                          <button
-                            type="button"
-                            className="search-input-button py-2"
-                            onClick={onSearch}
-                          >
-                            <span>
-                              <Search width={18} height={18} />
-                            </span>
-                            &nbsp;Trending
-                          </button>
-                        </p>
-                        {tags.map((tag: any, i) => {
-                          // console.log(tag);
-                          return (
-                            <ButtonNavy
-                              onClick={(e) => {
-                                // console.log(e)
-                                setCurValue(tag.attributes?.name);
-                                setKeyword(tag.attributes?.name);
-                                // handleChangeSearch(e)
-                              }}
-                              key={i}
-                            >
-                              # {tag.attributes?.name}
-                            </ButtonNavy>
-                          );
-                        })}
-                      </form>
-                    </Modal>
-                  </form> */}
                 </BoxALignCenter_Justify_ItemsEnd>
               </div>
               <BoxALignCenter_Justify_ItemsEnd className="col-md-3 navbar_home_pc">
                 <div className="d-flex align-items-center display_none_res">
-                  {/* <ButtonBackgroundBlueBold
-                    className="d-flex align-items-center me-3"
-                    onClick={() => {
-                      router.push("/submit");
-                    }}
-                  >
-                    <UploadOutlined className="me-2 fontSize_1-2" />
-                    Submit Dapp
-                  </ButtonBackgroundBlueBold> */}
-                  {/* {user ? (
-                    <>
-                      <Popover
-                        placement="bottom"
-                        content={popoverContent}
-                        trigger="focus"
-                      >
-                        <button
-                          className="navbar_userinfo_wrapper"
-                          type="button"
-                        >
-                          <img
-                            className="navbar_avatar"
-                            src={user?.avatar || "/img/default.png"}
-                          ></img>
-                          <div>{removeVietnameseTones(user?.displayName)}</div>
-                        </button>
-                      </Popover>
-                    </>
-                  ) : (
-                    <ButtonBlue
-                      className="px-4"
-                      // onClick={() => {
-                      //     dispatch(nameModalConnect('connectWallet'));
-                      //     dispatch(modalConnect(true));
-                      // }}
-                      onClick={openLoginPopup}
-                    >
-                      Login
-                    </ButtonBlue>
-                  )}
-                  {/* <WalletModal /> */}
                 </div> 
               </BoxALignCenter_Justify_ItemsEnd>
               <BoxALignItemsCenter className="navbar_home_mobile">
@@ -454,53 +344,7 @@ export const NavbarHome: FC = () => {
               </BoxALignItemsCenter>
             </>
           ) : (
-            <BoxALignCenter_Justify_ItemsCenter
-              className="w-100"
-              style={{ height: "63px" }}
-            >
-              <form onSubmit={onSearch} className="navbar_home-form">
-                <BoxALignItemsCenter>
-                  <input
-                    type="text"
-                    className="searchTerm"
-                    placeholder="Searching..."
-                    onChange={handleChangeSearch}
-                    onClick={() => setIsVisible(true)}
-                  />
-                  <button
-                    type="button"
-                    className="searchButton"
-                    onClick={onSearch}
-                  >
-                    <span>
-                      <Search width={18} height={18} />
-                    </span>
-                  </button>
-                </BoxALignItemsCenter>
-              </form>
-              {/* <form onSubmit={onSearch}>
-                <BoxALignItemsCenter>
-                  <input
-                    type="text"
-                    className="searchTerm"
-                    placeholder="Searching..."
-                    onChange={handleChangeSearch}
-                  />
-                  <button type="button" className="searchButton">
-                    <span>
-                      <Search width={18} height={18} />
-                    </span>
-                  </button>
-                </BoxALignItemsCenter>
-              </form> */}
-              <Button
-                className="ms-2"
-                type="button"
-                onClick={() => setBoxSearch(false)}
-              >
-                Cancel
-              </Button>
-            </BoxALignCenter_Justify_ItemsCenter>
+            <></>
           )}
         </BoxALignCenter_Justify_ItemsBetween>
       </section>
