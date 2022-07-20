@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   const StockChart = dynamic(() => import("@components/main/home").then((mod: any) => mod.StockChart)) as any;
   const HighestSocial = dynamic(() => import("@components/main/home").then((mod: any) => mod.HighestSocial)) as any;
   const Tweet = dynamic(() => import("@components/main/home").then((mod: any) => mod.Tweet)) as any;
-  const SocialNetwork = dynamic(() => import("@components/main/home").then((mod: any) => mod.SocialNetwork)) as any;
+  // const SocialNetwork = dynamic(() => import("@components/main/home").then((mod: any) => mod.SocialNetwork)) as any;
 
   return (
     <>
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <StockChart/>
       <HighestSocial />
       <Tweet />
-      <SocialNetwork />
+      {/* <SocialNetwork /> */}
     </>
   )
 }
