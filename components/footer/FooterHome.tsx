@@ -1,10 +1,5 @@
 import React, { FC } from "react";
 import { Facebook, Linkedin, Send, Twitter, Youtube } from "react-feather";
-import { BoxALignCenter_Justify_ItemsCenter } from "@styles/styled-components/styledBox";
-import { MediumOutlined } from "@ant-design/icons";
-import { IconsCircle } from "@styles/styled-components/styledButton";
-import Link from "next/link";
-
 export const FooterHome: FC = () => {
   const menuListFooter = [
     { name: "Listing NFT", href: "#", tab: false },
@@ -28,7 +23,7 @@ export const FooterHome: FC = () => {
                 color: "#28a8df",
               }}
             >
-              Tweetstock
+              Created By
             </h1>
             <br />
             <h3
@@ -37,30 +32,40 @@ export const FooterHome: FC = () => {
                 color: "#42ba6b",
               }}
             >
-              Created by
+              {/* Created by */}
             </h3>
             <p className="text-white fontSize_1">
-              Thuan Nguyen <br />
-              Kien To <br />
-              Tai Dang <br />
+              Thuan Nguyen{" "}
+              <span style={{ color: "#28a8df" }}>
+                <Send width={"0.8em"} height={"1.3em"} />{" "}
+                kiento0905.hec@gmail.com
+              </span>
+              <br />
+              Kien To{" "}
+              <span style={{ color: "#28a8df" }}>
+                <Send width={"0.8em"} height={"1.3em"} />{" "}
+                kiento0905.hec@gmail.com
+              </span>
+              <br />
+              Tai Dang{" "}
+              <span style={{ color: "#28a8df" }}>
+                <Send width={"0.8em"} height={"1.3em"} />{" "}
+                kiento0905.hec@gmail.com
+              </span>
+              <br />
               Son Mong
+              <span style={{ color: "#28a8df" }}>
+                <Send width={"0.8em"} height={"1.3em"} />{" "}
+                kiento0905.hec@gmail.com
+              </span>
             </p>
             <p className="text-green mt-3 fontSize_1-1">
-              <span className="text-green">
-                <Send width={"1.3em"} height={"1.3em"} />
-              </span>
-              <span className="text-white ms-2">@email.com</span>
+              {/* <span className="text-white ms-2">@email.com</span> */}
             </p>
           </div>
         </div>
         <div className="row footer_home_mobile"></div>
-        {/* <BoxALignCenter_Justify_ItemsCenter className="border_footer_top pt-4 pb-1">
-                    <p className="text-white m-0 fw-bold">
-                        Copyright © 2022 TweetStock. All rights reserved
-                    </p>
-                </BoxALignCenter_Justify_ItemsCenter> */}
       </div>
-      {/* <div className="land" /> */}
     </footer>
   );
 };

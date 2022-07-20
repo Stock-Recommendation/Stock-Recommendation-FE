@@ -1,11 +1,11 @@
 import React, { FC, useEffect, useState } from 'react';
 import { ButtonBlue } from '@styles/styled-components/styledButton';
-import BlogSlides from '../slides/BlogSlides';
-import request from '@services/apiService';
-import * as qs from 'qs';
+import TweetSlides from './TweetSlides';
+// import request from '@services/apiService';
+// import * as qs from 'qs';
 
 export const Tweet: FC = () => {
-    const [blogList, setBlogList] = useState(['1']);
+    const [blogList, setBlogList] = useState(['1','2','3','4','5']);
 
     return (
         <section className="main-homepage-blog px-3">
@@ -20,7 +20,7 @@ export const Tweet: FC = () => {
                     </ButtonBlue>
                 </div>
                 <div className="col-lg-9 col-12 mt-lg-0 mt-4 px-lg-2 px-0">
-                    <BlogSlides data={blogList} />
+                    <TweetSlides data={blogList} />
                 </div>
             </div>
             <div className="main-homepage-blog-background" />

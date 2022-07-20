@@ -4,10 +4,10 @@ export const TabMain = styled.div `
     background-color: white;
     border-radius: 8px;
     display: inline-flex;
-    border: 2px solid #058499;
+    border: 2px solid #28a8df;
     width: auto;
     .active {
-        background-color: #058499;
+        background-color: #28a8df;
         color: white;
         font-weight: 600;
         transition: 0.25s;
@@ -33,7 +33,7 @@ export const TabMain_Sub = styled.a `
     height: 30px;
     padding: 0px 15px;
     &:hover {
-        color: #058499;
+        color: #28a8df;
     }
 `;
 
@@ -45,7 +45,7 @@ export const NavMain = styled.div `
     
     .active {
         padding: 5px 15px;
-        background-color: #058499;
+        background-color: #28a8df;
         font-weight: 600;
         color: #FFF;
         &:hover {
@@ -71,7 +71,7 @@ export const Nav_Sub = styled.a `
     margin: 8px;
     padding: 5px 10px;
     &:hover {
-        color: #058499;
+        color: #28a8df;
     }
 `;
 
@@ -79,10 +79,10 @@ export const ToggleMain = styled.div `
     background-color: transparent;
     border-radius: 8px;
     display: inline-flex;
-    border: 2px solid #058499;
+    border: 2px solid #28a8df;
     width: auto;
     .active {
-        background-color: #058499;
+        background-color: #28a8df;
         color: white;
         font-weight: 600;
         transition: 0.25s;
@@ -103,11 +103,11 @@ export const ToggleMain_Sub = styled.a `
     opacity: 1;
     outline: 0;
     width: 110px;
-    font-family: "Circular Std";
+    // font-family: "Circular Std";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    color: #223052;
+    color: #28a8df;
     @media screen and (max-width: 766px) {
         width: 46vw;
     }

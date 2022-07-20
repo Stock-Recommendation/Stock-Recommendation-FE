@@ -5,11 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { BoxALignCenter_Justify_ItemsCenter, BoxALignItemsCenter, CategoryBox, CategoryUnbox } from "@styles/styled-components/styledBox";
 import { URL_API_ADMIN, URL_API_IMG } from "@config/index";
 import { Button } from '@styles/styled-components/styledButton';
-import moment from "moment";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Empty } from "antd";
 import { useRouter } from "next/router";
 import TweetEmbed from "react-tweet-embed";
 
@@ -65,6 +63,7 @@ export default function BlogSlides({ data }: any): ReactElement {
                     return (
                         <SwiperSlide key={i}>
                             <TweetEmbed tweetId={'1545136512274255874'}/>
+                            {/* <div>lol</div> */}
                         </SwiperSlide>
                     )
                 })}

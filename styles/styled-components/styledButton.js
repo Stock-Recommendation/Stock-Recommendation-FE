@@ -14,7 +14,7 @@ export const LoadMore = styled.button `
     border-radius: 13px;
     font-size: 13px;
     font-weight: bold;
-    border: 2px solid #058499;
+    border: 2px solid #28a8df;
     -webkit-box-pack: center;
     padding: 8px 15px;
     background-color: transparent;
@@ -25,17 +25,17 @@ export const LoadMoreBlue = styled.button `
     font-family: "Circular Std";
     font-size: 14px;
     font-weight: bold;
-    border: 2px solid #058499;
+    border: 2px solid #28a8df;
     -webkit-box-pack: center;
     padding: 6px 12px;
     box-shadow: 5px 10px 20px rgba(5, 132, 153, 0.25);
-    background-color: #058499;
+    background-color: #28a8df;
     color: white;
     
 `
 
 export const ButtonGradientBlue = styled.button `
-    background-image: linear-gradient(to right, #058499 0%, #12d8fa 51%, #058499 100%);
+    background-image: linear-gradient(to right, #28a8df 0%, #12d8fa 51%, #28a8df 100%);
     padding: 10px 25px;
     text-align: center;
     transition: 0.25s;
@@ -59,8 +59,8 @@ export const ButtonGradientBlue = styled.button `
 export const ButtonBorderBlueTransparent = styled.div `
     background-color: transparent;
     padding: .375rem .75rem;
-    border: 2px solid #058499;
-    color: #058499;
+    border: 2px solid #28a8df;
+    color: #28a8df;
     outline: none;
     display: inline-block;
     line-height: 1.5;
@@ -82,7 +82,7 @@ export const BorderedButtonTransparent = styled(ButtonBorderBlueTransparent)`
     
 `
 export const ButtonBlue = styled.button `
-    background-color: #058499;
+    background-color: #28a8df;
     padding: .375rem .75rem;
     border: none;
     color: #FFF;
@@ -143,8 +143,8 @@ export const ButtonBlueButLessBorder = styled(ButtonBlue)`
 export const ButtonBackgroundBlueBold = styled.div`
     background-color: #FCFCFD;
     padding: .375rem .75rem;
-    border: 1px solid #058499;
-    color: #058499;
+    border: 1px solid #28a8df;
+    color: #28a8df;
     outline: none;
     cursor: pointer;
     border-radius: 10px;
@@ -179,7 +179,7 @@ export const IconsCircle = styled.span `
 `;
 
 export const BigButtonSmallText = styled(ButtonBlue)`
-    background: #058499;
+    background: #28a8df;
     box-shadow: 5px 10px 20px rgba(5, 132, 153, 0.25);
     border-radius: 8px;
     font-size: 12px;
