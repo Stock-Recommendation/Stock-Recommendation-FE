@@ -18,7 +18,7 @@
 @import "./scss/Layouts/blockchain";
 @import "./scss/Layouts/submitdapp";
 @import "./scss/Layouts/footer";
-
+@import "./scss/Layouts/stocks";
 @font-face {
   font-family: "Circular Std";
   src: url("../public/fonts/CircularStd-Book.otf") format("opentype"),
@@ -52,7 +52,7 @@ body {
   position: relative;
 }
 body {
-  font-family: "SF Pro" !important;
+  font-family: "Circular Std Light" !important;
   height: auto;
   // background-image: url(/img/bg-dots.png) !important;
   // background-size: contain !important;
@@ -132,7 +132,7 @@ a {
   display: block;
 }
 .block-for-mobile {
-  display: none ;
+  display: none;
 }
 .flex-for-pc {
   display: flex;

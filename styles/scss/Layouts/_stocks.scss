@@ -1,0 +1,26 @@
+#stock-detail {
+    font-family: 'Nunito';
+  padding: 100px 160px;
+  @media screen and (max-width: 992px) {
+    padding: 20px 10px;
+  }
+  background: none;
+  background: rgb(231, 231, 231);
+  .title {
+    background: linear-gradient(60deg, $tweet-color, $up-color);
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    h1 {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .technical {
+    .detail-chart {
+        border-radius: 15px;
+        background-color: white;
+        padding: 10px;
+    }
+  }
+}
