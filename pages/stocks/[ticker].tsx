@@ -8,10 +8,10 @@ const StocksList = () => {
       </div>
       <div className="technical">
         <div className="row">
-          <div className="col-12 col-lg-7">
+          <div className="col-12 col-lg-8">
             <DetailGraph />
           </div>
-          <div className="col-12 col-lg-5"></div>
+          <div className="col-12 col-lg-4"></div>
         </div>
       </div>
       <div className="related-tweets"></div>

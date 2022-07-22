@@ -1,5 +1,9 @@
 #stock-detail {
-    font-family: 'Nunito';
+  &-wrapper{
+    gap: 10px;
+    display: flex;
+  }
+  font-family: "Nunito";
   padding: 100px 160px;
   @media screen and (max-width: 992px) {
     padding: 20px 10px;
@@ -18,9 +22,44 @@
   }
   .technical {
     .detail-chart {
-        border-radius: 15px;
-        background-color: white;
-        padding: 10px;
+      border-radius: 15px;
+      background-color: white;
+      padding: 10px;
     }
+  }
+  .rc-tabs-nav-list {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    .rc-tabs-tab-active {
+      background: $tweet-color;
+      color: white;
+    }
+    .rc-tabs-tab {
+      border-radius: 15px;
+      font-weight: bold;
+      border: 2px solid $tweet-color;
+      padding: 0 30px;
+    }
+  }
+
+  .white-box {
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+    height: 92px;
+    
+  }
+  
+  .positive {
+    color: $tweet-color;
+  }
+  .negative {
+    color: $down-color;
+  
+  }
+  .neutral {
+
   }
 }
