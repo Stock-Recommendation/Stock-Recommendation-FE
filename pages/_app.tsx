@@ -7,7 +7,6 @@ import LayoutGlobal from "@components/common/LayoutGlobal";
 import store from "@redux/store";
 import "bootstrap/dist/css/bootstrap.css";
 import "@styles/globals.scss";
-import * as ga from '../utils/ga';
 TopBarProgress.config({
   barColors: {
     "0": "#1DBBBD",
@@ -25,20 +24,7 @@ function MyApp({ Component, pageProps }: any) {
       : null;
   }, []);
 
-  useEffect(() => {
-    const handleRouteChange = (url: any) => {
-      ga.pageview(url);
-    };
-    //When the component is mounted, subscribe to router changes
-    //and log those page views
-    router.events.on("routeChangeComplete", handleRouteChange);
 
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
 
   Router.events.on("routeChangeStart", () => {
     setProgress(true);

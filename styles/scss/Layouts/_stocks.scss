@@ -1,0 +1,274 @@
+#stock-detail {
+  &-wrapper {
+    gap: 10px;
+    display: flex;
+  }
+  font-family: "Nunito";
+  padding: 100px 160px;
+  @media screen and (max-width: 992px) {
+    padding: 20px 10px;
+  }
+  background: none;
+  background: rgb(231, 231, 231);
+  .title {
+    background: linear-gradient(60deg, $tweet-color, $up-color);
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    h1 {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .technical {
+    h1 {
+      font-weight: bold;
+    }
+    .detail-chart {
+      border-radius: 15px;
+      background-color: white;
+      padding: 15px;
+
+      &-wrapper {
+        .white-box {
+          margin-top: 5px;
+          height: 100%;
+          margin-bottom: 5px;
+          padding-bottom: 2px;
+          .buysell {
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .positive {
+            font-size: 40px;
+            color: $tweet-color;
+            font-weight: bold;
+          }
+          .neutral {
+            font-size: 40px;
+            color: $tweet-color;
+            font-weight: bold;
+          }
+          .negative {
+            font-size: 40px;
+            color: $tweet-color;
+            font-weight: bold;
+          }
+        }
+        .progress {
+          height: fit-content;
+          background: none;
+        }
+        .history {
+          .percent {
+            &-pos {
+              font-size: 40px;
+              color: $tweet-color;
+              font-weight: bold;
+            }
+            &-neu {
+              font-size: 40px;
+              color: $tweet-color;
+              font-weight: bold;
+            }
+            &-neg {
+              font-size: 40px;
+              color: $tweet-color;
+              font-weight: bold;
+            }
+          }
+          font-weight: bold;
+          font-size: 25px;
+        }
+      }
+    }
+    .stock-calculator {
+      border-radius: 15px;
+      background-color: white;
+      padding: 30px 15px;
+      h2 {
+        background: rgb(231, 231, 231);
+        padding: 7px;
+        border-radius: 10px;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .invest {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        border: 1px solid black;
+        border-radius: 7px;
+        margin: 20px 10px;
+        padding: 10px;
+        input {
+          font-size: 25px;
+          margin-bottom: 0;
+          font-weight: bold;
+          text-align: left;
+          border: none;
+          text-align: right;
+          width: 100%;
+        }
+      }
+      .rc-tabs-tab {
+        border-radius: 15px;
+        font-weight: bold;
+        border: 2px solid $tweet-color;
+        padding: 0 20px;
+      }
+      .rc-tabs-nav-operations-hidden {
+        display: none;
+      }
+      .estimated-price {
+        .low,
+        .mid,
+        .high,
+        .asset {
+          display: flex;
+          gap: 10px;
+          justify-content: flex-end;
+          p {
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: 0;
+          }
+        }
+        .low,
+        .mid,
+        .high {
+          padding: 10px 15px;
+        }
+        .mid {
+          background-color: rgb(231, 231, 231);
+          border-radius: 7px;
+        }
+        .arrow {
+          &-up {
+            color: $tweet-color;
+            font-size: 35px;
+          }
+          &-down {
+            color: $down-color;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+    .rc-tabs-nav-list {
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .rc-tabs-tab-active {
+        background: $tweet-color;
+        color: white;
+      }
+      .rc-tabs-tab {
+        border-radius: 15px;
+        font-weight: bold;
+        border: 2px solid $tweet-color;
+        padding: 0 30px;
+      }
+    }
+
+    .white-box {
+      border-radius: 15px;
+      background-color: white;
+      padding: 10px;
+      height: 92px;
+    }
+
+    .positive {
+      color: $tweet-color;
+    }
+    .negative {
+      color: $down-color;
+    }
+    .neutral {
+    }
+  }
+  .related-tweets {
+    .rc-tabs-nav-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .rc-tabs-tab {
+        padding: 5px 15px;
+        border: 1px solid rgb(114, 114, 114);
+        color: rgb(114, 114, 114);
+        font-weight: bold;
+        border-radius: 7px;
+        background: #fff;
+        font-size: 20px;
+      }
+      .rc-tabs-tab-active {
+        background-color: black;
+        color: #fff;
+      }
+    }
+    .white-box {
+      background-color: #fff;
+      border-radius: 7px;
+      height: 100%;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .up {
+      .ant-progress-bg {
+        background: $up-color;
+      }
+      color: $up-color;
+    }
+    .neutral {
+      .ant-progress-bg {
+        background: $tweet-color;
+      }
+      color: $tweet-color;
+    }
+    .down {
+      .ant-progress-bg {
+        background: $down-color;
+      }
+      color: $down-color;
+    }
+    .table1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+    .right {
+      min-width: 50%;
+      .ant-progress-outer {
+        margin-bottom: 15px;
+      }
+      p {
+        text-align: end;
+      }
+    }
+    .more {
+      background-color: $tweet-color;
+      color: #fff;
+      width: 100%;
+      border-radius: 15px;
+      font-weight: normal;
+      font-size: 15px;
+      text-align: center;
+      padding: 5px 0;
+      margin-top: 20px;
+    }
+    .page{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0; 
+    }
+  }
+}
+.rc-tabs-tab {
+  cursor: pointer;
+}

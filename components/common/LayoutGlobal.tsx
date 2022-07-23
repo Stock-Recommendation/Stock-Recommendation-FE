@@ -51,44 +51,14 @@ export default function LayoutGlobal(props: any): ReactElement {
           name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0"
         />
-        <title>Tokenplay</title>
-        {!isDappNews && !isDappPortal && (
-          <>
-            <meta
-              property="og:image"
-              content="https://data-nft.tokenplay.app/NFTmarket.jpg"
-            />
-            <meta property="og:title" content="Tokenplay" />
-            <meta property="og:url" content="https://tokenplay.app/" />
-            <meta property="og:type" content="website" />
-            <meta property="og:site_name" content="Tokenplay Dappverse" />
-            <meta property="og:image" content="img/thumbnail_1.png" />
-            <meta property="og:URL" content="%PUBLIC_URL%/localImage.jpg" />
-          </>
-        )}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', '${NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-                        page_path: window.location.pathname,
-                        });
-                    `,
-          }}
-        />
+        <title>Tweetstock</title>
       </Head>
       <NavbarHome />
       {(
         <>
-        <div style={{paddingTop: '50px', margin: '50px '}}>{props.children}</div>
+        <div style={{paddingTop: '72px'}}>{props.children}</div>
         <div className="row-global pb-5 m-0 h-100">
-          <div className="main-background main-background-position-banner" />
+          {/* <div className="main-background main-background-position-banner" /> */}
           {/* <div className="main-background main-background-position-priceboard" /> */}
           {/* <div className="main-background main-background-position-highestsocial" /> */}
           {/* <div className="main-background main-background-position-blog" /> */}
