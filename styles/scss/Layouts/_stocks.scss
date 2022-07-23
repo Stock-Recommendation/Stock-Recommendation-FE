@@ -155,37 +155,40 @@
         }
       }
     }
-  }
-  .rc-tabs-nav-list {
-    margin: 20px 0;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    .rc-tabs-tab-active {
-      background: $tweet-color;
-      color: white;
+    .rc-tabs-nav-list {
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .rc-tabs-tab-active {
+        background: $tweet-color;
+        color: white;
+      }
+      .rc-tabs-tab {
+        border-radius: 15px;
+        font-weight: bold;
+        border: 2px solid $tweet-color;
+        padding: 0 30px;
+      }
     }
-    .rc-tabs-tab {
+
+    .white-box {
       border-radius: 15px;
-      font-weight: bold;
-      border: 2px solid $tweet-color;
-      padding: 0 30px;
+      background-color: white;
+      padding: 10px;
+      height: 92px;
+    }
+
+    .positive {
+      color: $tweet-color;
+    }
+    .negative {
+      color: $down-color;
+    }
+    .neutral {
     }
   }
-
-  .white-box {
-    border-radius: 15px;
-    background-color: white;
-    padding: 10px;
-    height: 92px;
-  }
-
-  .positive {
-    color: $tweet-color;
-  }
-  .negative {
-    color: $down-color;
-  }
-  .neutral {
+  .related-tweets {
+    
   }
 }

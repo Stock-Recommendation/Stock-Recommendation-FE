@@ -1,4 +1,5 @@
 import DetailGraph from "@components/main/stocks/DetailGraph";
+import RelatedTweets from "@components/main/stocks/RelatedTweets";
 import { StockCalculator } from "@components/main/stocks/StockCalculator";
 
 const StocksList = () => {
@@ -17,7 +18,9 @@ const StocksList = () => {
           </div>
         </div>
       </div>
-      <div className="related-tweets"></div>
+      <div className="related-tweets">
+        <RelatedTweets />
+      </div>
     </section>
   );
 };
