@@ -1,6 +1,7 @@
 import DetailGraph from "@components/main/stocks/DetailGraph";
 import RelatedTweets from "@components/main/stocks/RelatedTweets";
 import { StockCalculator } from "@components/main/stocks/StockCalculator";
+import { Progress } from "antd";
 
 const StocksList = () => {
   return (

@@ -1,3 +1,4 @@
+import { Pagination } from "antd";
 import Tabs from "rc-tabs";
 import TweetAnalysis from "./TweetAnalysis";
 const { TabPane } = Tabs;
@@ -18,6 +19,15 @@ const RelatedTweets = () => {
         {categories.map((cate, i) => (
           <TabPane key={i} tabKey={i.toString()} tab={cate.name}>
             <TweetAnalysis />
+            <TweetAnalysis />
+            <TweetAnalysis />
+            <div className="page">
+              <Pagination
+                defaultPageSize={3}
+                current={1}
+                total={9}
+              ></Pagination>
+            </div>
           </TabPane>
         ))}
       </Tabs>

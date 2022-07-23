@@ -73,7 +73,7 @@ const DetailGraph = () => {
         </Tabs>
       </div>
       <div className="row py-4 gx-3">
-        <div className="col-lg-6 col-12 left"style={{ marginBottom: 10 }}>
+        <div className="col-lg-6 col-12 left" style={{ marginBottom: 10 }}>
           <div className="white-box">
             <div className="buysell">Buy/Sell</div>
             <h2 className="positive">Strong Buy</h2>
@@ -85,7 +85,7 @@ const DetailGraph = () => {
               <div className="row">
                 <div
                   className="col-lg-3 col-md-4 col-5"
-                  
+                  style={{ display: "flex", alignItems: "center" }}
                 >
                   <CircularProgressbarWithChildren
                     value={82}
@@ -95,15 +95,13 @@ const DetailGraph = () => {
                     })}
                   >
                     <img
-                      style={{ width: 50, marginTop: -5 }}
+                      style={{ width: "75%", marginTop: -5 }}
                       src="https://i.imgur.com/b9NyUGm.png"
                       alt="doge"
                     />
                   </CircularProgressbarWithChildren>
                 </div>
-                <div
-                  className="col-lg-9 col-md-8 col-7"
-                >
+                <div className="col-lg-9 col-md-8 col-7">
                   <div className="history">
                     <div className="percent-pos">82%</div>
                     Historical accuracy
