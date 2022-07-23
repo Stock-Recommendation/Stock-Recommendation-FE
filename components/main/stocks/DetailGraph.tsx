@@ -8,7 +8,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import {
+  buildStyles,
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+} from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Tabs from "rc-tabs";
 const { TabPane } = Tabs;
@@ -39,10 +43,10 @@ const DetailGraph = () => {
           {timeQuery.map((query, i) => (
             <TabPane tab={query.time} tabKey={i.toString()} key={i}>
               <div style={{ width: "100%" }}>
-                <ResponsiveContainer width="100%" height={300}>
+                <ResponsiveContainer width="100%" height={350}>
                   <LineChart
                     width={500}
-                    height={300}
+                    height={350}
                     data={data}
                     margin={{
                       top: 10,
@@ -69,22 +73,41 @@ const DetailGraph = () => {
         </Tabs>
       </div>
       <div className="row py-4 gx-3">
-        <div className="col-6 left">
+        <div className="col-lg-6 col-12 left"style={{ marginBottom: 10 }}>
           <div className="white-box">
             <div className="buysell">Buy/Sell</div>
             <h2 className="positive">Strong Buy</h2>
           </div>
         </div>
-        <div className="col-6 right">
+        <div className="col-lg-6 col-12 right" style={{ marginBottom: 10 }}>
           <div className="white-box">
             <div className="progress">
               <div className="row">
-                <div className="col-4">
-                  <CircularProgressbar
+                <div
+                  className="col-lg-3 col-md-4 col-5"
+                  
+                >
+                  <CircularProgressbarWithChildren
                     value={82}
-                    text={`${82}%`}
-                    // styles={buildStyles({ textSize: "10px" })}
-                  />
+                    strokeWidth={11}
+                    styles={buildStyles({
+                      strokeLinecap: "butt",
+                    })}
+                  >
+                    <img
+                      style={{ width: 50, marginTop: -5 }}
+                      src="https://i.imgur.com/b9NyUGm.png"
+                      alt="doge"
+                    />
+                  </CircularProgressbarWithChildren>
+                </div>
+                <div
+                  className="col-lg-9 col-md-8 col-7"
+                >
+                  <div className="history">
+                    <div className="percent-pos">82%</div>
+                    Historical accuracy
+                  </div>
                 </div>
               </div>
             </div>

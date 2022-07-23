@@ -1,4 +1,5 @@
 import DetailGraph from "@components/main/stocks/DetailGraph";
+import { StockCalculator } from "@components/main/stocks/StockCalculator";
 
 const StocksList = () => {
   return (
@@ -11,7 +12,9 @@ const StocksList = () => {
           <div className="col-12 col-lg-8">
             <DetailGraph />
           </div>
-          <div className="col-12 col-lg-4"></div>
+          <div className="col-12 col-lg-4">
+            <StockCalculator />
+          </div>
         </div>
       </div>
       <div className="related-tweets"></div>
