@@ -1,4 +1,4 @@
-This is a Tokenplay Dappverse Project.
+This is TweetStock
 
 ## Getting Started
 
@@ -11,4 +11,4 @@ yarn dev
 ```
 
 Open [http://localhost:8008](http://localhost:8008) with your browser to see the result.
-# tokenplay-dappverse-FE
+# TweetStock

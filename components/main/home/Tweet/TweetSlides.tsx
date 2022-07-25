@@ -67,7 +67,9 @@ export default function BlogSlides({ data }: any): ReactElement {
           };
           return (
             <SwiperSlide key={i}>
+              <div>
               <TweetEmbed tweetId="692527862369357824" />
+              </div>
             </SwiperSlide>
           );
         })}

@@ -242,14 +242,14 @@ export const NavbarHome: FC = () => {
                 </div> 
               </BoxALignCenter_Justify_ItemsEnd>
               <BoxALignItemsCenter className="navbar_home_mobile">
-                {/* <Button
+                <Button
                   className="d-flex align-items-center p-2 rounded-circle"
                   style={{ border: "1px solid #000", fontSize: "1rem" }}
                   // onClick={onShowBoxSearch}
                   onClick={() => setIsVisible(true)}
                 >
                   <SearchOutlined style={{ color: "#000" }} />
-                </Button> */}
+                </Button>
                 {user && (
                   <Popover
                     placement="bottom"
