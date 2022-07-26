@@ -1,11 +1,12 @@
 import { Progress } from "antd";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 const TweetAnalysis = () => {
   return (
     <div className="row g-3 mt-3">
       <div className="col-md-8 col-12">
         <div className="white-box">
-          Tweet here, not integrated yet
+        <TwitterTweetEmbed tweetId={'1551572844030484480'} />
         </div>
       </div>
       <div className="col-md-4 col-12">

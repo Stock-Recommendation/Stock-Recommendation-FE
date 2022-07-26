@@ -62,7 +62,7 @@ export const HighestSocial: FC = () => {
   ];
 
   return (
-    <section className="main-homepage-highestsocial px-lg-3 px-0">
+    <section className="main-homepage-highestsocial px-lg-5 px-0">
       <SectionHeader>Dashboard</SectionHeader>
       <Tabs
         defaultActiveKey={"crypto"}
