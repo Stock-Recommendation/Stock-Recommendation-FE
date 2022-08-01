@@ -47,7 +47,7 @@ import 'dayjs' // load on demand
 //   },
 // ];
 
-const stockdata = {
+const stockdata: any = {
   series: [{
     name: 'candle',
     data: [
