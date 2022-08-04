@@ -1,0 +1,83 @@
+#dashboard {
+  font-family: "Nunito";
+  padding: 100px;
+  @media screen and (max-width: 992px) {
+    padding: 20px 10px;
+  }
+  background: none;
+  background: rgb(231, 231, 231);
+  .time-query {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    p {
+      margin-bottom: 0;
+      font-weight: bold;
+      text-align: center;
+      padding: 5px;
+    }
+    .button-wrapper {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      button {
+        padding: 5px 30px;
+        font-weight: bold;
+        background-color: #fff;
+        color: black;
+        border: none;
+        border-radius: 7px;
+      }
+      button.active {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  table {
+    margin-top: 15px;
+    width: 100%;
+    tr {
+      padding: 10px 0;
+    }
+    th,
+    td {
+      font-weight: normal !important;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    thead {
+      width: 100%;
+      background: linear-gradient(60deg, $tweet-color, $up-color);
+      color: #fff;
+    }
+    tbody {
+
+      img.icon {
+        width: 25px;
+      }
+      img.graph {
+        height: 50px;
+      }
+      tr {
+        background-color: #fff;
+      }
+      td.predicted-price {
+        font-weight: bold;
+        .up {
+          color: $up-color;
+        }
+        .down {
+          color: $down-color;
+        }
+      }
+      td.up {
+        color: $up-color;
+      }
+      td.down {
+        color: $down-color;
+      }
+    }
+  }
+}
