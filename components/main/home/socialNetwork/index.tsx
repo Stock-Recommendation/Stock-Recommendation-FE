@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import { ButtonBlue } from '@styles/styled-components/styledButton';
+import { ButtonBlue } from 'styles/styled-components/styledButton';
 import { message } from 'antd';
 import axios from 'axios';
-import { URL_API_ADMIN } from '@config/index';
+import { URL_API_ADMIN } from 'config/index';
 import Link from 'next/link';
-import { SectionHeader } from '@styles/styled-components/styledTabs';
+import { SectionHeader } from 'styles/styled-components/styledTabs';
 
 export const SocialNetwork: FC = () => {
 
@@ -37,8 +37,8 @@ export const SocialNetwork: FC = () => {
     }
 
     return (
-        <section className="main-homepage-socialnetwork px-lg-3 px-0">
-            {/* <SectionHeader>Contact Us</SectionHeader> */}
+        <section className="main-homepage-socialnetwork px-lg-5 px-0">
+            <SectionHeader>Contact Us</SectionHeader>
             <div className="row align-items-center">
                 <div className="col-lg-6 col-12">
                     {/* <div className="row">
@@ -66,9 +66,9 @@ export const SocialNetwork: FC = () => {
                             );
                         })}
                     </div> */}
-                    {/* <img src="img/draw/joinwithus.png" alt="block" className='row main-homepage-socialnetwork-block'/>     */}
+                    <img src="img/Tesla.jpg" alt="block" className='row main-homepage-socialnetwork-block'/>    
                 </div>
-                <div className="col-lg-12 col-12">
+                <div className="col-lg-6 col-12">
                     <h4>Leave A Message</h4>
                     <form
                         className="main-homepage-socialnetwork-app-form-submit"

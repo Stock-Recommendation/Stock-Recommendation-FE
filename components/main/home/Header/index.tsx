@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+// import './index.css'
 type Props = {};
 
 export const Header = ({ }: Props) => {
 
   return (
-    <div className="section--header" id="home">
-        <div className="main py-5 mb-5">
+    <div className="main-background-position-banner" id="home">
+        <div className="main py-5 px-5 mb-5">
           <div className="col-12">
             <div className="row">
               <div className="col-md-8">

@@ -4,13 +4,13 @@ import {
   BoxALignCenter_Justify_ItemsCenter,
   BoxALignCenter_Justify_ItemsEnd,
   BoxALignItemsCenter,
-} from "@styledComponents/styledBox";
+} from "../../styles/styled-components/styledBox";
 import {
   Button,
   ButtonBackgroundBlueBold,
   ButtonBlue,
   ButtonNavy,
-} from "@styledComponents/styledButton";
+} from "../../styles/styled-components/styledButton";
 import {
   MenuOutlined,
   SearchOutlined,
@@ -24,7 +24,7 @@ import request from "@services/apiSSO";
 import Cookies from "js-cookie";
 import difRequest from "@services/apiService";
 import qs from "qs";
-import requestSSO from "@services/apiSSO";
+import requestSSO from "../../services/apiSSO";
 export const NavbarHome: FC = () => {
   const router: any = useRouter();
   const [keyword, setKeyword] = useState("");
@@ -140,9 +140,9 @@ export const NavbarHome: FC = () => {
     },
     {
       name: "Dashboard",
-      link: "/dapp-portal",
+      link: "/dashboard",
       newTab: false,
-      routeSelected: "/dapp-portal",
+      routeSelected: "/dashboard",
     },
   ];
 
@@ -169,9 +169,9 @@ export const NavbarHome: FC = () => {
       },
       {
         name: "Dashboard",
-        link: "/dapp-portal",
+        link: "/dashboard",
         newTab: false,
-        routeSelected: "/dapp-portal",
+        routeSelected: "/dashboard",
       },
       newLog,
     ]);
@@ -219,6 +219,7 @@ export const NavbarHome: FC = () => {
                               rel="noopener noreferrer"
                               className="m-0"
                               href={menu.link}
+                              // style = 
                             >
                               {menu.name}
                             </a>
@@ -242,15 +243,15 @@ export const NavbarHome: FC = () => {
                 </div> 
               </BoxALignCenter_Justify_ItemsEnd>
               <BoxALignItemsCenter className="navbar_home_mobile">
-                <Button
+                {/* <Button
                   className="d-flex align-items-center p-2 rounded-circle"
                   style={{ border: "1px solid #000", fontSize: "1rem" }}
                   // onClick={onShowBoxSearch}
                   onClick={() => setIsVisible(true)}
                 >
                   <SearchOutlined style={{ color: "#000" }} />
-                </Button>
-                {user && (
+                </Button> */}
+                {/* {user && (
                   <Popover
                     placement="bottom"
                     content={popoverContent}
@@ -263,13 +264,13 @@ export const NavbarHome: FC = () => {
                       ></img>
                     </button>
                   </Popover>
-                )}
+                )} */}
                 <Button
                   type="button"
                   onClick={showDrawer}
                   className="d-flex align-items-center border-0 ms-3 drawer-button"
                 >
-                  <MenuOutlined style={{ color: "#000" }} />
+                  <MenuOutlined style={{ color:'#28a8df'}} />
                 </Button>
                 
                 <Drawer

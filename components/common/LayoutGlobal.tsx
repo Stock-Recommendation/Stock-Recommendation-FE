@@ -3,7 +3,7 @@ import {
   BoxALignCenter_Justify_ItemsEnd,
   BoxALignCenter_Justify_ItemsStart,
 } from "@styles/styled-components/styledBox";
-import { BannerLeft, BannerRight, BannerMain } from "@components/banner";
+// import { BannerLeft, BannerRight, BannerMain } from "@components/banner";
 import { NEXT_PUBLIC_GOOGLE_ANALYTICS } from "@config/index";
 import dynamic from "next/dynamic";
 import request from "@services/apiService";

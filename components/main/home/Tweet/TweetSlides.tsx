@@ -3,18 +3,14 @@ import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  BoxALignCenter_Justify_ItemsCenter,
-  BoxALignItemsCenter,
-  CategoryBox,
-  CategoryUnbox,
-} from "@styles/styled-components/styledBox";
-import { URL_API_ADMIN, URL_API_IMG } from "@config/index";
-import { Button } from "@styles/styled-components/styledButton";
+  BoxALignCenter_Justify_ItemsCenter, CategoryUnbox,
+} from "styles/styled-components/styledBox";
+import { Button } from "styles/styled-components/styledButton";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRouter } from "next/router";
-import TweetEmbed from "react-tweet-embed";
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 export default function BlogSlides({ data }: any): ReactElement {
   const navigationPrevRef = React.useRef(null);
@@ -61,15 +57,9 @@ export default function BlogSlides({ data }: any): ReactElement {
         }}
       >
         {data.map((blog: any, i: number) => {
-          const onClick = (data: any) => {
-            const slug = data.attributes.slug;
-            router.push(`/dapp-news/${slug}`);
-          };
           return (
             <SwiperSlide key={i}>
-              <div>
-              <TweetEmbed tweetId="692527862369357824" />
-              </div>
+                <TwitterTweetEmbed tweetId={blog} />
             </SwiperSlide>
           );
         })}
