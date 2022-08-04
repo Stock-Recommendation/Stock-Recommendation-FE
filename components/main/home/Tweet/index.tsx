@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import { ButtonBlue } from '@styles/styled-components/styledButton';
+import { ButtonBlue } from 'styles/styled-components/styledButton';
 import TweetSlides from './TweetSlides';
 // import request from '@services/apiService';
 // import * as qs from 'qs';

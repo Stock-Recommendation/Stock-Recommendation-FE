@@ -4,13 +4,12 @@ import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   BoxALignCenter_Justify_ItemsCenter, CategoryUnbox,
-} from "@styles/styled-components/styledBox";
-import { Button } from "@styles/styled-components/styledButton";
+} from "styles/styled-components/styledBox";
+import { Button } from "styles/styled-components/styledButton";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRouter } from "next/router";
-import TweetEmbed from "react-tweet-embed";
 import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 export default function BlogSlides({ data }: any): ReactElement {

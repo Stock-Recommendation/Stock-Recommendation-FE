@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import { ButtonBlue } from '@styles/styled-components/styledButton';
+import { ButtonBlue } from 'styles/styled-components/styledButton';
 import { message } from 'antd';
 import axios from 'axios';
-import { URL_API_ADMIN } from '@config/index';
+import { URL_API_ADMIN } from 'config/index';
 import Link from 'next/link';
-import { SectionHeader } from '@styles/styled-components/styledTabs';
+import { SectionHeader } from 'styles/styled-components/styledTabs';
 
 export const SocialNetwork: FC = () => {
 
